@@ -96,40 +96,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//    @SuppressLint("NonConstantResourceId")
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()) {
-//
-//            case R.id.menu_rateUs:
-//                Toast.makeText(this, "Rate Us", Toast.LENGTH_SHORT).show();
-//                return true;
-//            case R.id.menu_share:
-//                Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
-//                shareIntent.setType("text/plain");
-//                String app_url = "https://github.com/GauthamAsir/WhatsApp_Status_Saver/releases";
-//                shareIntent.putExtra(Intent.EXTRA_TEXT,
-//                        "Hey check out my app at \n\n" + app_url);
-//                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "WhatsApp Status Saver");
-//                startActivity(Intent.createChooser(shareIntent, "Share via"));
-//
-//                return true;
-//            case R.id.menu_privacyPolicy:
-//                startActivity(new Intent(getApplicationContext(), PrivacyPolicy.class));
-//                return true;
-//            case R.id.menu_aboutUs:
-//                startActivity(new Intent(getApplicationContext(), AboutUs.class));
-//                return true;
-////            case R.id.menu_checkUpdate:
-////                GetLatestAppVersion getLatestAppVersion = new GetLatestAppVersion();
-////                getLatestAppVersion.execute();
-////                return true;
-//            default:
-//                return super.onOptionsItemSelected(item);
-//
-//        }
 
-//    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -195,20 +162,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    @SuppressLint("StaticFieldLeak")
-//    private class GetLatestAppVersion extends AsyncTask {
-//
-//        @Override
-//        protected Object doInBackground(Object[] objects) {
-//
-//            AppUpdater appUpdater = new AppUpdater(MainActivity.this);
-//            appUpdater.setDisplay(Display.DIALOG);
-//            appUpdater.setDialogAlertStyle(R.style.dialogAlertStyle);
-//            appUpdater.setUpGithub("GauthamAsir", "WhatsApp_Status_Saver");
-//            appUpdater.start();
-//
-//            return null;
-//        }
-//    }
+
 
 }
